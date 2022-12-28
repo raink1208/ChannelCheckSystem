@@ -50,3 +50,14 @@ protobuf {
         }
     }
 }
+
+sourceSets {
+    main {
+        java {
+            srcDir("build/generated/source/proto/main/grpc")
+            srcDir("build/generated/source/proto/main/grpckt")
+            srcDir("build/generated/source/proto/main/java")
+            srcDir("build/generated/source/proto/main/kotlin")
+        }
+    }
+}
