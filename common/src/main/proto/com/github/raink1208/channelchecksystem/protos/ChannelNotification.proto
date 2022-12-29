@@ -3,11 +3,11 @@ syntax = "proto3";
 option java_package = "com.github.raink1208.channelchecksystem.protos";
 
 service BackendService {
-  rpc NewVideoNotification(VideoNotificationRequest) returns (stream VideoNotificationResponse);
+  rpc RegisterNewVideoNotification(VideoNotificationRequest) returns (stream VideoNotificationResponse);
 }
 
 message VideoNotificationRequest {
-  string connectionID = 1;
+  string connectionId = 1;
   string channelId = 2;
 }
 
