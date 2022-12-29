@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option java_package = "com.github.raink1208.grpcsample.protos";
+option java_package = "com.github.raink1208.channelchecksystem.protos";
 
 service BackendService {
   rpc NewVideoNotification(VideoNotificationRequest) returns (stream VideoNotificationResponse);
