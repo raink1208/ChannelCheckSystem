@@ -21,6 +21,11 @@ dependencies {
 
     developmentOnly("org.springframework.boot:spring-boot-devtools")
 
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:${rootProject.ext["coroutinesVersion"]}")
+    implementation("io.grpc:grpc-kotlin-stub:${rootProject.ext["grpcKotlinVersion"]}")
+    implementation("io.grpc:grpc-protobuf:${rootProject.ext["grpcVersion"]}")
+    implementation("com.google.protobuf:protobuf-kotlin:${rootProject.ext["protobufVersion"]}")
+
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("io.github.lognet:grpc-spring-boot-starter:4.9.1")
